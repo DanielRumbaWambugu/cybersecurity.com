@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My portfolio</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="mediaqueries.css"/>
+
+
+
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Daniel Rumba</div>
+        <button id="themeButton" class="theme-button">Change Theme</button>
+
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href=".\videos">My videos</a></li>
+
+            </ul>
+            
+        </div>
+    </nav>
+    <nav id="hamberger-nav">
+        <div class="logo">Daniel Rumba</div>
+        
+        <div class="hamberger-menu">
+        <div class="hamberger-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    <div class="menu-links">
+        <li><a href="#about" onclick="toggleMenu()">About</a></li>
+        <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+        <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        <li><a href=".\videos" onclick="toggleMenu()">My videos</a></li>
+               
+    </div>
+    </div>
+    </nav>
+    <section id="profile">
+        <div class="section__pit-container">
+            <img src=".\security.png" alt="security logo">
+        </div>
+        <div class="section_text">
+            <p class="section_text-pl">Hello, I'm</p>
+            <h1 class="title">Daniel Rumba</h1>
+            <p class="section_text_p2"> A Frontend developer, Ethical hacker and cybersecurity analyst</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" 
+                onclick="window.open('./introduction.txt')">
+                Download cv
+            </button>
+            <button class="btn btn-color-1"
+             onclick="location.href='#contact'">
+                Contact Info
+            </button>
+            
+            </div>
+            <div id="socials-container">
+                <img src=".\Linkedin-Logo-PNG-Photos.png" alt="my LinkedIn profile"
+                class="icon" onclick="location.href='https://linkedin.com/'"/>
+                <img src=".\pngwing.com.png" alt="my Github profile"
+                class="icon" onclick="location.href='https://github.com/DanielRumbaWambugu/DanielRumbaWambugu/upload'"/>
+            </div>
+
+        </div>
+    </section>
+    <section id="about">
+        <p class="section_text-pl">Get To Know More</p>
+        <h1 class="title">About me</h1>
+        <p>
+            At the tender age of 20, I embarked on a journey that would not only shape my identity but also redefine my purpose. Armed with an insatiable curiosity and an unwavering commitment to integrity, I ventured into the enigmatic realm of ethical hacking.
+
+            With each line of code, I sought not just to unravel systems but to fortify them against malevolent forces lurking in the digital shadows. Beyond the confines of mere technical prowess, I embraced the ethos of responsibility, understanding that with great skill comes an even greater obligation to safeguard the digital landscape.
+            
+            Yet, my identity transcends the realm of bits and bytes. Rooted in empathy and compassion, I navigate the complexities of cyberspace with a profound understanding of the human element. Each interaction is an opportunity to foster trust, to empower individuals, and to pave the way for a safer, more equitable online community.
+            
+            As I walk the fine line between darkness and light, I am reminded that age is but a number, and true wisdom stems from the fusion of knowledge and character. In every keystroke, I strive not only to unravel the mysteries of technology but also to illuminate the path towards a brighter, more secure future for all.    <br>
+        </p>
+        <div class="section container">
+            <div class="section__pit-container">
+                <img src=".\standard-quality-control-collage-concept.jpg"
+                alt="profile Picture" 
+                class="about-pic"
+                />
+            </div>
+            <div class="about-details-container">
+                <div class="about-container">
+                    <div class="details-containers">
+                        
+                        
+                        <h1>Experience</h1>
+                        <img src=".\zq-lee-VbDjv8-8ibc-unsplash.jpg" alt="expirience " 
+                        class="expirience-pic"/>
+                        <p>1+ years<br>Frontend Development</p>
+                    </div>
+                    <div class="details-container">
+                        <img src=".\securityf.jpg" alt="Education icon" 
+                        class="icon"/>
+                        <h1>Education</h1>
+                        <p>Bachelor of science in information technology<br>Ethical hacking <br>cybersecurity</p>
+                    </div>
+                </div>
+                <div class="text-container">
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="script.js"></script>
+
+    
+</body>
+</html>
